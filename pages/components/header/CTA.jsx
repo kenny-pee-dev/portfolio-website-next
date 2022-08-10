@@ -8,7 +8,7 @@ function CTA() {
 
   return (
     <div className={styles.cta}>
-      <Document file='./public/resume.pdf' />
+      <Document file='https://s3.ap-southeast-1.amazonaws.com/kennypee.com/resume.pdf' />
       <Button
         variant='contained'
         className='btn btn-primary'
