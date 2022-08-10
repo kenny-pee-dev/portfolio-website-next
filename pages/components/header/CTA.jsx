@@ -1,22 +1,30 @@
-import React from 'react';
+import { Button } from '@mui/material';
+import React, { useState } from 'react';
+import { Document } from 'react-pdf';
 import styles from './header.module.css';
-// import CV from '../../../assets/kenny_resume.pdf';
 
-const CTA = () => {
+function CTA() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className={styles.cta}>
-      {/* <a href={CV} download className="btn">
-        Download CV
-      </a> */}
-      <a
-        href="mailto:jiazunwork@gmail.com"
-        target="_top"
-        className="btn btn-primary"
+      <Document file='./public/resume.pdf' />
+      <Button
+        variant='contained'
+        className='btn btn-primary'
+        href={`mailto:test@example.com`}
       >
         Let&apos;s Talk!
-      </a>
+      </Button>
+      <Button
+        variant='contained'
+        className='btn btn-primary'
+        href={`mailto:test@example.com`}
+      >
+        Download CV
+      </Button>
     </div>
   );
-};
+}
 
 export default CTA;

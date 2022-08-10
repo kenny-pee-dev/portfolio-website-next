@@ -9,14 +9,14 @@ const Header = () => {
       <div className={`container ${styles.header__container}`}>
         <h5>Hello I&apos;m</h5>
         <h1>Kenny!</h1>
-        <h5 className="text-light">Full-stack Developer</h5>
+        <h5 className='text-light'>Full-stack Developer</h5>
         <CTA />
         <HeaderSocials />
         <div className={styles.me}>
-          <img src="/me.png" alt="me"/>
+          <img src='/me.png' alt='me' />
         </div>
 
-        <a href="#contact" className={styles.scroll__down}>
+        <a href='#contact' className={styles.scroll__down}>
           Scroll Down
         </a>
       </div>
