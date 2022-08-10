@@ -8,10 +8,13 @@ const HeaderSocials = () => {
   return (
     <div className={styles.header__socials}>
       {/* eslint-disable react/jsx-no-target-blank */}
-      <a href='https://linkedin.com' target='_blank'>
+      <a
+        href='https://www.linkedin.com/in/jia-zun-pee-94770717a/'
+        target='_blank'
+      >
         <BsLinkedin />
       </a>
-      <a href='https://github.com' target='_blank'>
+      <a href='https://github.com/kenny-pee-dev' target='_blank'>
         <FaGithub />
       </a>
       {/* eslint-disable react/jsx-no-target-blank */}
