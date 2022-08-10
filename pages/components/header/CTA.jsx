@@ -39,15 +39,13 @@ function CTA() {
         </div>
       </Modal>
       <Button
-        variant='contained'
-        className='btn btn-primary'
+        variant='outlined'
         href={`mailto:test@example.com`}
       >
         Let&apos;s Talk!
       </Button>
       <Button
-        variant='contained'
-        className='btn btn-primary'
+        variant='outlined'
         onClick={toggleModal}
       >
         View CV
