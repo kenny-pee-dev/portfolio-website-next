@@ -12,7 +12,7 @@ const NavIcons = ({ id, handleOnClick, currentActiveState }) => {
         return <AiOutlineHome />;
       case '#about':
         return <AiOutlineUser />;
-      case '#experience':
+      case '#skills':
         return <BiBook />;
       case '#contact':
         return <BiMessageSquareDetail />;

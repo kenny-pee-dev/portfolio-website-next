@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import { InView } from 'react-intersection-observer';
-// import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Header from './components/header/Header';
 import Navigation from './components/nav/Navigation';
 import About from './components/about/About';
 import { useGlobalStore } from '../store/useGlobalStore';
+import Skills from './components/skills/Skills';
 
 export default function Home() {
   const setActiveView = useGlobalStore((state) => state.setActiveView);
@@ -41,8 +41,9 @@ export default function Home() {
             handleViewChange(inView, '#about');
           }}
         >
-          <About />
+          {/* <About /> */}
         </InView>
+        <Skills />
       </main>
     </div>
   );

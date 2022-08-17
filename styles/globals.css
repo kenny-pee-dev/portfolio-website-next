@@ -11,6 +11,7 @@
 }
 
 :root {
+  --color-black: #000000;
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -35,7 +36,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--color-bg);
+  background: var(--color-black);
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(/japan.jpg)
@@ -64,6 +65,11 @@ section {
 section > h2, section > h5 {
   text-align: center;
   color: var(--color-light);
+}
+
+section > h1 {
+  text-align: center;
+  color: var(--color-white)
 }
 
 section > h2 {

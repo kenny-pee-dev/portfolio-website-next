@@ -21,7 +21,7 @@ const Navigation = () => {
       />
 
       <NavIcons
-        id='#experience'
+        id='#skills'
         handleOnClick={setActiveView}
         currentActiveState={activeDiv}
       />
