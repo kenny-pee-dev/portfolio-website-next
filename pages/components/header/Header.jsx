@@ -5,7 +5,7 @@ import HeaderSocials from './HeaderSocials';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header id='header' className={styles.header}>
       <div className={`container ${styles.header__container}`}>
         <h5>Hello I&apos;m</h5>
         <h1>Kenny!</h1>
