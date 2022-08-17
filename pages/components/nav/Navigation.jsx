@@ -1,36 +1,35 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NavIcons from './NavIcons';
+import { useGlobalStore } from '../../../store/useGlobalStore';
 
 const Navigation = () => {
-  const [active, setActive] = useState('#header');
-
-  function handleOnClick(id) {
-    setActive(id);
-  }
+  const setActiveView = useGlobalStore((state) => state.setActiveView);
+  const activeDiv = useGlobalStore((state) => state.activeView);
 
   return (
     <nav>
       <NavIcons
         id='#header'
-        handleOnClick={handleOnClick}
-        currentActiveState={active}
+        handleOnClick={setActiveView}
+        currentActiveState={activeDiv}
       />
+
       <NavIcons
         id='#about'
-        handleOnClick={handleOnClick}
-        currentActiveState={active}
+        handleOnClick={setActiveView}
+        currentActiveState={activeDiv}
       />
 
       <NavIcons
         id='#experience'
-        handleOnClick={handleOnClick}
-        currentActiveState={active}
+        handleOnClick={setActiveView}
+        currentActiveState={activeDiv}
       />
 
       <NavIcons
         id='#contact'
-        handleOnClick={handleOnClick}
-        currentActiveState={active}
+        handleOnClick={setActiveView}
+        currentActiveState={activeDiv}
       />
     </nav>
   );
