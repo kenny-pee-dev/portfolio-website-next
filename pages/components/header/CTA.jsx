@@ -27,7 +27,7 @@ function CTA() {
           <PDFViewer />
           <Tooltip
             title='Close PDF'
-            color='primary'
+            color='info'
             style={{
               height: '50px',
             }}
@@ -38,16 +38,10 @@ function CTA() {
           </Tooltip>
         </div>
       </Modal>
-      <Button
-        variant='outlined'
-        href={`mailto:test@example.com`}
-      >
+      <Button variant='outlined' href={`mailto:test@example.com`} color='info'>
         Let&apos;s Talk!
       </Button>
-      <Button
-        variant='outlined'
-        onClick={toggleModal}
-      >
+      <Button variant='outlined' onClick={toggleModal} color='info'>
         View CV
       </Button>
     </div>

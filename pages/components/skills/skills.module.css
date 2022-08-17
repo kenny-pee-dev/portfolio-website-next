@@ -18,7 +18,7 @@
 
 .skills_card:hover {
     background-color:rgba(19, 27, 35, 1);
-    border-color: var(--color-primary-variant)
+    border-color: var(--color-primary-white)
 }
 
 .container > div h3 {
