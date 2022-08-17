@@ -38,12 +38,12 @@ export default function Home() {
         <InView
           as='div'
           onChange={(inView) => {
-            handleViewChange(inView, '#about');
+            handleViewChange(inView, '#skills');
           }}
         >
-          {/* <About /> */}
+          <Skills />
         </InView>
-        <Skills />
+        {/* <About /> */}
       </main>
     </div>
   );
