@@ -7,9 +7,7 @@ const nextConfig = {
       unoptimized: true,
     },
   },
-  future: {
-    webpack5: true,
-  },
+  future: {},
   webpack: (config) => {
     // load worker files as a urls with `file-loader`
     config.module.rules.unshift({
