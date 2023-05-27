@@ -5,11 +5,6 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    colors: {
-      'ash-grey': '#252934',
-      'ash-grey-hover': '#131B23',
-      'primary-white': '#FFF',
-    },
     extend: {
       transitionDuration: {
         400: '400ms',
@@ -17,6 +12,11 @@ module.exports = {
       ringColor: {
         DEFAULT: '#FFF', // default ring color
         white: '#ffffff',
+      },
+      colors: {
+        'ash-grey': '#252934',
+        'ash-grey-hover': '#131B23',
+        'primary-white': '#FFF',
       },
     },
   },
