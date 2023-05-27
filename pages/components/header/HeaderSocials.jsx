@@ -14,7 +14,7 @@ const HeaderSocials = () => {
       >
         <BsLinkedin />
       </a>
-      <a href='https://github.com/kenny-pee-dev' target='_blank'>
+      <a href='https://github.com/strawhatduckk' target='_blank'>
         <FaGithub />
       </a>
       {/* eslint-disable react/jsx-no-target-blank */}
