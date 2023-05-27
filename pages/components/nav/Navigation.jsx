@@ -14,11 +14,11 @@ const Navigation = () => {
         currentActiveState={activeDiv}
       />
 
-      <NavIcons
+      {/* <NavIcons
         id='#about'
         handleOnClick={setActiveView}
         currentActiveState={activeDiv}
-      />
+      /> */}
 
       <NavIcons
         id='#skills'
@@ -26,11 +26,11 @@ const Navigation = () => {
         currentActiveState={activeDiv}
       />
 
-      <NavIcons
+      {/* <NavIcons
         id='#contact'
         handleOnClick={setActiveView}
         currentActiveState={activeDiv}
-      />
+      /> */}
     </nav>
   );
 };

@@ -4,7 +4,7 @@ import { InView } from 'react-intersection-observer';
 import styles from '../styles/Home.module.css';
 import Header from './components/header/Header';
 import Navigation from './components/nav/Navigation';
-import About from '../dont-build/about/About';
+// import About from '../dont-build/about/About';
 import { useGlobalStore } from '../store/useGlobalStore';
 import Skills from './components/skills/Skills';
 
