@@ -2,12 +2,14 @@ import {
   SiReact,
   SiHtml5,
   SiCss3,
-  SiMaterialui,
-  SiPython,
-  SiJavascript,
+  SiVuedotjs,
+  SiRubyonrails,
   SiExpress,
   SiNestjs,
-  SiMysql,
+  SiTailwindcss,
+  SiPython,
+  SiTypescript,
+  SiJavascript,
 } from 'react-icons/si';
 
 import { GrMysql } from 'react-icons/gr';
@@ -20,10 +22,10 @@ import styles from './skills.module.css';
 const Skills = () => {
   return (
     <section id='skills'>
-      <h1>Skillz I have</h1>
-      <h5>My stack</h5>
+      <h1>Relevant skills</h1>
+      <h5>My stacks!</h5>
       <div className={styles.container}>
-        <div className={styles.skills_card}>
+        <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
           <h3>Frontend Development</h3>
           <div className={styles.content}>
             <article className={styles.details}>
@@ -37,13 +39,17 @@ const Skills = () => {
             </article>
 
             <article className={styles.details}>
-              <SiMaterialui className={styles.details_icon} />
-              <h4>MaterialUI</h4>
+              <SiVuedotjs className={styles.details_icon} />
+              <h4>VueJS</h4>
             </article>
 
             <article className={styles.details}>
               <SiHtml5 className={styles.details_icon} />
               <h4>HTML</h4>
+            </article>
+            <article className={styles.details}>
+              <SiTailwindcss className={styles.details_icon} />
+              <h4>TailwindCSS</h4>
             </article>
 
             <article className={styles.details}>
@@ -53,16 +59,12 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className={styles.skills_card}>
+        <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
           <h3>Backend Development</h3>
           <div className={styles.content}>
             <article className={styles.details}>
-              <SiPython className={styles.details_icon} />
-              <h4>Python</h4>
-            </article>
-            <article className={styles.details}>
-              <SiJavascript className={styles.details_icon} />
-              <h4>Javascript</h4>
+              <SiRubyonrails className={styles.details_icon} />
+              <h4>Rails</h4>
             </article>
             <article className={styles.details}>
               <FaNodeJs className={styles.details_icon} />
@@ -82,6 +84,30 @@ const Skills = () => {
             <article className={styles.details}>
               <GrMysql />
               <h4>MySQL</h4>
+            </article>
+          </div>
+        </div>
+
+        <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
+          <h3>Programming Languages</h3>
+          <div className={styles.content}>
+            <article className={styles.details}>
+              <SiRubyonrails className={styles.details_icon} />
+              <h4>Ruby</h4>
+            </article>
+            <article className={styles.details}>
+              <SiJavascript className={styles.details_icon} />
+              <h4>Javascript</h4>
+            </article>
+
+            <article className={styles.details}>
+              <SiTypescript className={styles.details_icon} />
+              <h4>Typescript</h4>
+            </article>
+
+            <article className={styles.details}>
+              <SiPython className={styles.details_icon} />
+              <h4>Python</h4>
             </article>
           </div>
         </div>
