@@ -31,7 +31,7 @@ const Skills = () => {
   const isBreakpoint = useMediaQuery(768);
   const memeSize = isBreakpoint ? 200 : 300;
   return (
-    <section id='about' className='flex'>
+    <section id='about' className='flex bg-black/70'>
       <div className='flex flex-row justify-center item-center gap-5'>
         {!isBreakpoint ? (
           <div className='flex justify-center items-center'>
@@ -62,16 +62,19 @@ const Skills = () => {
           <p>🇸🇬 A Full Stack Software Engineer based in Singapore.</p>
 
           <p>
-            🎓 I've graduated from the National University of Singapore with a
+            🎓 I&apos;ve graduated from the National University of Singapore with a
             degree in Statistics, specializing in Data Science.
           </p>
 
           <p>
-            🗄 Previously worked at{' '}
+            🗄 Previously worked at
+            {' '}
             <a href='https://www.stat.nus.edu.sg/consulting/data-analytics-consulting-centre/'>
               NUS Data Analytics Consulting Center
-            </a>{' '}
-            as a research intern + teaching assistant, at{' '}
+            </a>
+            {' '}
+            as a research intern + teaching assistant, at
+            {' '}
             <a href='https://www.dbs.com/careers/structured-programmes/seed-programme'>
               DBS Singapore SEED programme
             </a>
@@ -79,12 +82,16 @@ const Skills = () => {
           </p>
 
           <p>
-            📈 Honing my peak badassery at{' '}
-            <a href='https://padlet.com'>Padlet</a> since 2022.
+            📈 Honing my peak badassery at
+            {' '}
+            <a href='https://padlet.com'>Padlet</a>
+            {' '}
+            since 2022.
           </p>
 
           <p>
-            🤖 Other than programming, you can either catch me{' '}
+            🤖 Other than programming, you can either catch me
+            {' '}
             <a href='https://steamcommunity.com/id/zinovif5/'>
               playing games 🕹
             </a>
