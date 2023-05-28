@@ -17,12 +17,7 @@ function CTA() {
 
   return (
     <div className={styles.cta}>
-      <Modal
-        open={showModal}
-        onClose={toggleModal}
-        aria-labelledby='modal-modal-title'
-        aria-describedby='modal-modal-description'
-      >
+      <Modal open={showModal} onClose={toggleModal}>
         <div className={styles.modalDiv}>
           <PDFViewer />
           <Tooltip
@@ -38,7 +33,11 @@ function CTA() {
           </Tooltip>
         </div>
       </Modal>
-      <Button variant='outlined' href={`https://t.me/realkennyboi`} color='info'>
+      <Button
+        variant='outlined'
+        href={`https://t.me/realkennyboi`}
+        color='info'
+      >
         Let&apos;s Talk!
       </Button>
       <Button variant='outlined' onClick={toggleModal} color='info'>
