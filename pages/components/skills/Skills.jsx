@@ -25,7 +25,7 @@ const Skills = () => {
     <section id='skills' className='p-3'>
       <h1>Languages and Tools 🛠</h1>
       <h5>tinkering about</h5>
-      <div className='pt-3 flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-8 md:mx-auto md:mt-8 md:w-4/5'>
+      <div className='pt-3 pb-3 flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-8 md:mx-auto md:mt-8 md:w-4/5'>
         <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
           <h3 className='mb-2'>Frontend</h3>
           <div className={styles.content}>
