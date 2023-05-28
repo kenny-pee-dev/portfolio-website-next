@@ -38,7 +38,7 @@ function CTA() {
           </Tooltip>
         </div>
       </Modal>
-      <Button variant='outlined' href={`mailto:jiazunwork@gmail.com`} color='info'>
+      <Button variant='outlined' href={`https://t.me/realkennyboi`} color='info'>
         Let&apos;s Talk!
       </Button>
       <Button variant='outlined' onClick={toggleModal} color='info'>
