@@ -19,8 +19,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Welcome to my portfolio!</title>
-        <meta name='description' content='' />
+        <title>Home | Kenny Pee</title>
+        <meta
+          name='description'
+          content="Portfolio website of Kenny Pee, a software engineer currently working at Padlet. Explore Kenny's expertise in software development, web applications, and problem-solving. Connect with Kenny to discuss anything about software engineering and collaborate on innovative solutions."
+        />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
