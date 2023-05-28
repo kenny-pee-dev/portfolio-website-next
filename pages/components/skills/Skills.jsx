@@ -23,7 +23,9 @@ import styles from './skills.module.css';
 const Skills = () => {
   return (
     <section id='skills' className='p-3'>
-      <h1>Languages and Tools 🛠</h1>
+      <div className="flex justify-center">
+        <h1 className='max-w-xl bg-slate-400/20 px-5 mb-2 rounded-3xl text-center'>Languages and Tools 🛠</h1>
+      </div>
       <h5>tinkering about</h5>
       <div className='pt-3 pb-3 flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-8 md:mx-auto md:mt-8 md:w-4/5'>
         <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>

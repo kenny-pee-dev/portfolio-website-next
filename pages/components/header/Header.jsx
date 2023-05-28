@@ -14,7 +14,7 @@ const Header = () => {
           <h5 className='text-light'>Software Engineer at </h5>
           <div className='ml-1 w-20 h-10 relative'>
             {/* adjust the size as needed */}
-            <Image layout='fill' src='/padlet.png' alt='me' />
+            <Image layout='fill' src='/padlet.png' alt='padlet_icon' />
           </div>
         </div>
         <CTA />
