@@ -4,7 +4,6 @@ import { InView } from 'react-intersection-observer';
 import styles from '../styles/Home.module.css';
 import Header from './components/header/Header';
 import Navigation from './components/nav/Navigation';
-// import About from '../dont-build/about/About';
 import { useGlobalStore } from '../store/useGlobalStore';
 import Skills from './components/skills/Skills';
 
@@ -24,7 +23,6 @@ export default function Home() {
         <meta name='description' content='' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <main className={styles.main}>
         <InView
           as='div'
@@ -34,7 +32,6 @@ export default function Home() {
         >
           <Header />
         </InView>
-        <Navigation />
         <InView
           as='div'
           onChange={(inView) => {
@@ -43,7 +40,7 @@ export default function Home() {
         >
           <Skills />
         </InView>
-        {/* <About /> */}
+        <Navigation />
       </main>
     </div>
   );

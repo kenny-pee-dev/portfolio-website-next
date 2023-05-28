@@ -10,6 +10,7 @@ import {
   SiPython,
   SiTypescript,
   SiJavascript,
+  SiCypress,
 } from 'react-icons/si';
 
 import { GrMysql } from 'react-icons/gr';
@@ -21,12 +22,12 @@ import styles from './skills.module.css';
 
 const Skills = () => {
   return (
-    <section id='skills'>
-      <h1>Relevant skills</h1>
-      <h5>My stacks!</h5>
-      <div className={styles.container}>
+    <section id='skills' className='p-3'>
+      <h1>Languages and Tools 🛠</h1>
+      <h5>tinkering about</h5>
+      <div className='pt-3 flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-8 md:mx-auto md:mt-8 md:w-4/5'>
         <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
-          <h3>Frontend Development</h3>
+          <h3 className='mb-2'>Frontend</h3>
           <div className={styles.content}>
             <article className={styles.details}>
               <TbBrandNextjs className={styles.details_icon} />
@@ -41,6 +42,11 @@ const Skills = () => {
             <article className={styles.details}>
               <SiVuedotjs className={styles.details_icon} />
               <h4>VueJS</h4>
+            </article>
+
+            <article className={styles.details}>
+              <SiCypress className={styles.details_icon} />
+              <h4>Cypress</h4>
             </article>
 
             <article className={styles.details}>
@@ -60,7 +66,7 @@ const Skills = () => {
         </div>
 
         <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
-          <h3>Backend Development</h3>
+          <h3 className='mb-2'>Backend</h3>
           <div className={styles.content}>
             <article className={styles.details}>
               <SiRubyonrails className={styles.details_icon} />
@@ -89,7 +95,7 @@ const Skills = () => {
         </div>
 
         <div className='bg-ash-grey p-10 rounded-[2rem] transition duration-400 ease-in-out hover:bg-ash-grey-hover hover:ring-2'>
-          <h3>Programming Languages</h3>
+          <h3 className='mb-2'>Languages</h3>
           <div className={styles.content}>
             <article className={styles.details}>
               <SiRubyonrails className={styles.details_icon} />
