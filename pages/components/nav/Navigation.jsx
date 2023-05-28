@@ -14,11 +14,11 @@ const Navigation = () => {
         currentActiveState={activeDiv}
       />
 
-      {/* <NavIcons
+      <NavIcons
         id='#about'
         handleOnClick={setActiveView}
         currentActiveState={activeDiv}
-      /> */}
+      />
 
       <NavIcons
         id='#skills'

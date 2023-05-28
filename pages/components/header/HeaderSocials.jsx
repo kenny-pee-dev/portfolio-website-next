@@ -6,7 +6,7 @@ import styles from './header.module.css';
 
 const HeaderSocials = () => {
   return (
-    <div className={styles.header__socials}>
+    <div className={`z-10 ${styles.header__socials}`}>
       {/* eslint-disable react/jsx-no-target-blank */}
       <a
         href='https://www.linkedin.com/in/jia-zun-pee-94770717a/'

@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Navigation from './components/nav/Navigation';
 import { useGlobalStore } from '../store/useGlobalStore';
 import Skills from './components/skills/Skills';
+import About from './components/about/About';
 
 export default function Home() {
   const setActiveView = useGlobalStore((state) => state.setActiveView);
@@ -34,6 +35,14 @@ export default function Home() {
           }}
         >
           <Header />
+        </InView>
+        <InView
+          as='div'
+          onChange={(inView) => {
+            handleViewChange(inView, '#about');
+          }}
+        >
+          <About />
         </InView>
         <InView
           as='div'
