@@ -16,7 +16,7 @@ export default function PDFViewer() {
 
   return (
     <div>
-      <div>
+      <div className="container__document">
         <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
           {Array.from({ length: numPages }, (_, index) => (
             <Page

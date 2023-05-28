@@ -156,6 +156,34 @@ nav a.active {
   
 }
 
+/* ============================= PDF container  ============================= */
+
+.container__document {
+  margin: 1em 0;
+}
+
+.container__document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__document .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+}
+
+.container__document .react-pdf__Page canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.container__document .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
+
 /* ++++ Media Queries (Medium devices) ++++ */
 
 @media screen and (max-width: 1024px){
